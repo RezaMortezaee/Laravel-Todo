@@ -18,4 +18,8 @@
 <p>{{$todo->body}}</p>
 <br><br>
 <a href="/todo/{{$todo->id}}/edit" class="btn btn-primary">Edit</a>
+{!! Form::open(['action' => ['TodosController@destroy',$todo->id],'method'=>'POST','class'=>'float-sm-left']) !!} 
+{{ Form::hidden('_method','DELETE') }} 
+{{ Form::bsSubmit('Delete',['class'=> 'btn btn-danger']) }} 
+{!! Form::close()!!}
 @endsection
