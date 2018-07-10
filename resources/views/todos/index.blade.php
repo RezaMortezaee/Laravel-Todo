@@ -1,8 +1,7 @@
 @extends('layouts.app') 
 
 @section('content')
-
-<hr><hr>
+<br><br><br>
 <h1>Todos</h1>
 
 @if(count($todos) > 0) 

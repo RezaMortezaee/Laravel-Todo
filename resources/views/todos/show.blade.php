@@ -7,7 +7,7 @@
     <a href="#">Go Back</a>
 </div>
 <h1>
-    <a href="todo/{{$todo->id}}">
+    <a href="/todo/{{$todo->id}}">
        {{$todo->text}}
     </a>
 </h1>
@@ -16,4 +16,6 @@
 </div>
 <hr>
 <p>{{$todo->body}}</p>
+<br><br>
+<a href="/todo/{{$todo->id}}/edit" class="btn btn-primary">Edit</a>
 @endsection
